@@ -3,6 +3,15 @@
 Amazon keyword-rank tracker on Lark Base: Python backend + Base heatmap block + Chrome (MV3) crawler.
 Clean, user-independent template — all ids/credentials come from `.env` (see `.env.example`), tables/fields are resolved by name.
 
+## Quick start
+
+```bash
+git clone https://github.com/pnguyennhatha-ux/rankflow-template.git
+cd rankflow-template
+```
+
+Then follow [SETUP.md](SETUP.md) to set everything up from zero.
+
 **Start with [SETUP.md](SETUP.md).**
 
 | Path | What |
