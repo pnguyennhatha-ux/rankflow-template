@@ -1,0 +1,394 @@
+{
+  "watchlist": [
+    {
+      "field_name": "watchlist_id",
+      "type": 1
+    },
+    {
+      "field_name": "name",
+      "type": 1
+    },
+    {
+      "field_name": "marketplace",
+      "type": 1
+    },
+    {
+      "field_name": "zip",
+      "type": 1
+    },
+    {
+      "field_name": "top_n",
+      "type": 2,
+      "property": {
+        "formatter": "0"
+      }
+    },
+    {
+      "field_name": "sponsored",
+      "type": 7
+    },
+    {
+      "field_name": "schedule_enabled",
+      "type": 7
+    },
+    {
+      "field_name": "schedule_days",
+      "type": 1
+    },
+    {
+      "field_name": "schedule_time",
+      "type": 1
+    },
+    {
+      "field_name": "schedule_note",
+      "type": 1
+    },
+    {
+      "field_name": "updated_at",
+      "type": 1
+    },
+    {
+      "field_name": "last_pulled_at",
+      "type": 1
+    },
+    {
+      "field_name": "last_run_at",
+      "type": 1
+    },
+    {
+      "field_name": "last_run_status",
+      "type": 1
+    }
+  ],
+  "watchlist_item": [
+    {
+      "field_name": "asin",
+      "type": 1
+    },
+    {
+      "field_name": "keyword",
+      "type": 1
+    },
+    {
+      "field_name": "watchlist_id",
+      "type": 1
+    },
+    {
+      "field_name": "group",
+      "type": 1
+    },
+    {
+      "field_name": "enabled",
+      "type": 7
+    },
+    {
+      "field_name": "updated_at",
+      "type": 1
+    },
+    {
+      "field_name": "source",
+      "type": 1
+    },
+    {
+      "field_name": "owner",
+      "type": 11,
+      "property": {
+        "multiple": false
+      }
+    }
+  ],
+  "snapshot": [
+    {
+      "field_name": "run_id",
+      "type": 1
+    },
+    {
+      "field_name": "asin",
+      "type": 1
+    },
+    {
+      "field_name": "keyword",
+      "type": 1
+    },
+    {
+      "field_name": "snapshot_day",
+      "type": 1
+    },
+    {
+      "field_name": "status",
+      "type": 3,
+      "property": {
+        "options": [
+          {
+            "name": "ranked"
+          },
+          {
+            "name": "not_found"
+          },
+          {
+            "name": "unverified_blocked"
+          },
+          {
+            "name": "unverified_parser_error"
+          }
+        ]
+      }
+    },
+    {
+      "field_name": "organic_rank",
+      "type": 2,
+      "property": {
+        "formatter": "0"
+      }
+    },
+    {
+      "field_name": "position_on_page",
+      "type": 1
+    },
+    {
+      "field_name": "image_url",
+      "type": 15
+    },
+    {
+      "field_name": "price_cents",
+      "type": 2,
+      "property": {
+        "formatter": "0"
+      }
+    },
+    {
+      "field_name": "marketplace",
+      "type": 1
+    },
+    {
+      "field_name": "zip",
+      "type": 1
+    },
+    {
+      "field_name": "group",
+      "type": 1
+    },
+    {
+      "field_name": "owner",
+      "type": 11,
+      "property": {
+        "multiple": false
+      }
+    }
+  ],
+  "crawl_run": [
+    {
+      "field_name": "run_id",
+      "type": 1
+    },
+    {
+      "field_name": "watchlist_id",
+      "type": 1
+    },
+    {
+      "field_name": "marketplace",
+      "type": 1
+    },
+    {
+      "field_name": "zip",
+      "type": 1
+    },
+    {
+      "field_name": "top_n",
+      "type": 2,
+      "property": {
+        "formatter": "0"
+      }
+    },
+    {
+      "field_name": "sponsored",
+      "type": 7
+    },
+    {
+      "field_name": "started_at",
+      "type": 1
+    },
+    {
+      "field_name": "finished_at",
+      "type": 1
+    },
+    {
+      "field_name": "status",
+      "type": 3,
+      "property": {
+        "options": [
+          {
+            "name": "pending"
+          },
+          {
+            "name": "running"
+          },
+          {
+            "name": "success"
+          },
+          {
+            "name": "partial"
+          },
+          {
+            "name": "failed"
+          }
+        ]
+      }
+    },
+    {
+      "field_name": "note",
+      "type": 1
+    },
+    {
+      "field_name": "pairs_total",
+      "type": 2,
+      "property": {
+        "formatter": "0"
+      }
+    },
+    {
+      "field_name": "pairs_found",
+      "type": 2,
+      "property": {
+        "formatter": "0"
+      }
+    },
+    {
+      "field_name": "pairs_not_found",
+      "type": 2,
+      "property": {
+        "formatter": "0"
+      }
+    },
+    {
+      "field_name": "pairs_failed",
+      "type": 2,
+      "property": {
+        "formatter": "0"
+      }
+    },
+    {
+      "field_name": "error",
+      "type": 1
+    },
+    {
+      "field_name": "groups",
+      "type": 1
+    },
+    {
+      "field_name": "owners",
+      "type": 11,
+      "property": {
+        "multiple": true
+      }
+    }
+  ],
+  "run_request": [
+    {
+      "field_name": "request_id",
+      "type": 1
+    },
+    {
+      "field_name": "watchlist_id",
+      "type": 1
+    },
+    {
+      "field_name": "requested_by",
+      "type": 1
+    },
+    {
+      "field_name": "requested_at",
+      "type": 1
+    },
+    {
+      "field_name": "status",
+      "type": 3,
+      "property": {
+        "options": [
+          {
+            "name": "pending"
+          },
+          {
+            "name": "claimed"
+          },
+          {
+            "name": "running"
+          },
+          {
+            "name": "done"
+          },
+          {
+            "name": "failed"
+          },
+          {
+            "name": "cancelled"
+          }
+        ]
+      }
+    },
+    {
+      "field_name": "run_id",
+      "type": 1
+    },
+    {
+      "field_name": "result_status",
+      "type": 1
+    },
+    {
+      "field_name": "note",
+      "type": 1
+    },
+    {
+      "field_name": "started_at",
+      "type": 1
+    },
+    {
+      "field_name": "finished_at",
+      "type": 1
+    },
+    {
+      "field_name": "exit_code",
+      "type": 2,
+      "property": {
+        "formatter": "0"
+      }
+    }
+  ],
+  "member": [
+    {
+      "field_name": "name",
+      "type": 1
+    },
+    {
+      "field_name": "open_id",
+      "type": 1
+    },
+    {
+      "field_name": "person",
+      "type": 11,
+      "property": {
+        "multiple": false
+      }
+    },
+    {
+      "field_name": "en_name",
+      "type": 1
+    },
+    {
+      "field_name": "avatar_url",
+      "type": 15
+    },
+    {
+      "field_name": "departments",
+      "type": 1
+    },
+    {
+      "field_name": "active",
+      "type": 7
+    },
+    {
+      "field_name": "updated_at",
+      "type": 1
+    }
+  ]
+}

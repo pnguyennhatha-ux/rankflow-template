@@ -1,0 +1,12 @@
+{
+  "watchlist_id": "default",
+  "name": "Default",
+  "marketplace": "amazon.com",
+  "zip": "10001",
+  "top_n": 190,
+  "sponsored": false,
+  "schedule_enabled": false,
+  "schedule_days": "",
+  "schedule_time": "",
+  "schedule_note": "Chưa bật lịch tự động"
+}

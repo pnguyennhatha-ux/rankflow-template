@@ -1,0 +1,14 @@
+:root{--primary:#2868ed;--text:#162038;--muted:#68728a;--border:#e3e8f2;--ok:#16784a;--warn:#a45a00;--bad:#b42323;font:13px/1.45 Inter,ui-sans-serif,system-ui,sans-serif;color:var(--text);background:#f5f7fb}
+*{box-sizing:border-box}body{margin:0}main{width:300px;padding:14px;display:grid;gap:10px}
+.head{display:flex;align-items:center;gap:10px}.head img{width:32px;height:32px;border-radius:8px}.head div{flex:1;min-width:0}.head b{display:block;font-size:15px}.head small{color:var(--muted);font-size:11px}
+.box{background:#fff;border:1px solid var(--border);border-radius:9px;padding:10px 12px;display:grid;gap:6px}
+.box small{color:var(--muted)}.line{display:flex;justify-content:space-between;gap:8px}.line span:last-child{color:var(--muted);text-align:right}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:99px;padding:3px 9px;font-size:11px;font-weight:700;width:max-content}
+.pill i{width:7px;height:7px;border-radius:50%;background:currentColor}
+.pill.idle{background:#eef1f7;color:#4f5b73}.pill.running{background:#e8f0ff;color:#2059c7}.pill.paused{background:#fff4e0;color:var(--warn)}.pill.error,.pill.offline{background:#ffecec;color:var(--bad)}.pill.disabled{background:#f0f1f4;color:#7a8396}
+.progress{height:6px;border-radius:99px;background:#e9edf5;overflow:hidden}.progress>span{display:block;height:100%;background:var(--primary)}
+.progress.indeterminate>span{width:35%!important;animation:slide 1.3s ease-in-out infinite}@keyframes slide{0%{transform:translateX(-100%)}100%{transform:translateX(290%)}}
+.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+a.btn{display:block;text-align:center;text-decoration:none;font-weight:600;border:1px solid #cad3e3;border-radius:8px;padding:8px;background:#fff;color:#23304d}a.btn.primary{background:var(--primary);border-color:var(--primary);color:#fff;grid-column:1/-1}
+button{font:inherit;font-weight:600;border:1px solid #cad3e3;border-radius:8px;padding:8px;background:#fff;color:#23304d;cursor:pointer}button.primary{background:var(--primary);border-color:var(--primary);color:#fff}

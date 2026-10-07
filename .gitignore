@@ -1,0 +1,16 @@
+.env
+*.env
+!.env.example
+!*.env.example
+node_modules/
+dist/
+.output/
+.wxt/
+data/
+logs/
+*.sqlite3*
+*.db
+__pycache__/
+*.pyc
+*.zip
+.DS_Store

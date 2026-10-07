@@ -1,0 +1,36 @@
+{
+  "name": "rankflow-block-ui",
+  "version": "0.2.11",
+  "private": true,
+  "description": "Rank Track Table View Extension — heatmap + Bộ key + Chạy ngay",
+  "scripts": {
+    "start": "webpack serve --mode development --config webpack.config.js",
+    "dev": "npm run start",
+    "check": "node scripts/check-ids.js",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run check && npm run typecheck && node scripts/test-owner.js",
+    "build": "npm run check && webpack --mode production --config webpack.config.js",
+    "upload": "STRICT=1 npm run build && opdev upload ./dist -t block -v $npm_package_version -d \"Rank Track heatmap $npm_package_version\""
+  },
+  "dependencies": {
+    "@lark-opdev/block-bitable-api": "^0.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@lark-opdev/block-bitable-webpack-utils": "^0.1.7",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "rankTrack": {
+    "note": "identity comes from env (LARK_APP_ID, BLOCK_TYPE_ID, RANKFLOW_BASE_URL) - see ../.env.example"
+  }
+}

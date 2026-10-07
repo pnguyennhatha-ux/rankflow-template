@@ -1,0 +1,7 @@
+{
+  "manifestVersion": 1,
+  "blockTypeID": "<BLOCK_TYPE_ID>",
+  "blockRenderType": "offlineWeb",
+  "projectName": "rank_track_heatmap",
+  "url": "https://<tenant>.larksuite.com/base/<BASE_TOKEN>"
+}

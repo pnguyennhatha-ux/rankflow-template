@@ -1,0 +1,25 @@
+[Unit]
+Description=RankFlow v2 scheduler and bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=rankflow
+WorkingDirectory=/opt/rankflow
+EnvironmentFile=/etc/rankflow/rankflow.env
+ExecStart=/usr/bin/python3 /opt/rankflow/backend/rankflow.py serve
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/rankflow
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target
